@@ -3,6 +3,13 @@
     <div class="input-group-prepend">
       <span class="input-group-text"><i class="fa fa-lock fa-fw"></i></span>
     </div>
-    <%= f.text_field :otp_code_token, placeholder: 'Token', class: 'form-control' %>
+    <input
+      type="text"
+      name="otp_code_token"
+      id="otp_code_token"
+      class="form-control"
+      placeholder="Código 2FA"
+      maxlength="6"
+      />
   </div>
 </div>

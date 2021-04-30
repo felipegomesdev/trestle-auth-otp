@@ -1,7 +1,8 @@
-<%- @qr = RQRCode::QRCode.new(@instance.provisioning_uri("#{Trestle.config.site_title} (#{@instance.email})"), size: 10, level: :h) %>
+<%- @qr = RQRCode::QRCode.new(@instance.provisioning_uri("#{Trestle.config.site_title} (#{@instance.first_name})"), size: 10, level: :h) %>
 
 <div class="text-center">
-  <p><strong>Scan with Google Authenticator</strong></p>
+  <p><strong>Escaneie com:</strong></p>
+  <p><strong>Google Authenticator ou Authy</strong></p>
 
   <%= @qr.as_svg(
     offset: 0,

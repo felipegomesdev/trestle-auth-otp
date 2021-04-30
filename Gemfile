@@ -13,6 +13,6 @@ end
 
 gem "sassc-rails"
 
-gem "rake", "~> 12.0"
+gem "rake", "~> 13.0"
 
-gem "trestle", github: "TrestleAdmin/trestle"
+gem "trestle", '0.9.3'

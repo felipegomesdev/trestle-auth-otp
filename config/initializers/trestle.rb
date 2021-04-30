@@ -19,7 +19,6 @@ Trestle.configure do |config|
     else
       return user
     end
-
   }
 
 end

@@ -10,7 +10,7 @@ Trestle.resource(:<%= plural_name %>, model: <%= model %>, scope: Auth) do
       avatar_for(administrator)
     end
     column :email, link: true
-    column :otp_module, header: 'OTP'
+    column :otp_module, header: '2FA Ativada?'
     <%- unless devise? -%>
     column :first_name
     column :last_name
@@ -40,7 +40,7 @@ Trestle.resource(:<%= plural_name %>, model: <%= model %>, scope: Auth) do
       col(sm: 6) { password_field :password_confirmation }
     end
 
-    check_box :otp_module, label: 'Enable OTP'
+    check_box :otp_module, label: 'Ativar Autenticação de 2 Fatores (2FA)'
 
   end
   <%- if devise? -%>
